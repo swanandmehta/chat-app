@@ -47,7 +47,9 @@
             ],
             "styles": [
               "node_modules/@clr/ui/clr-ui.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/common.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },

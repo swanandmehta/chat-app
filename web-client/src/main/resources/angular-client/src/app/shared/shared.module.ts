@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
+import { ClarityModule } from '@clr/angular';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
-  ]
+    ReactiveFormsModule,
+    ClarityModule,
+  ],
+  exports:[ClarityModule, ReactiveFormsModule]
 })
 export class SharedModule { }
