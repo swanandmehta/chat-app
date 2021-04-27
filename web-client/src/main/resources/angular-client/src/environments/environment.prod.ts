@@ -3,7 +3,8 @@ export const environment = {
   server: {
     auth : {
       base: "http://localhost:8081/auth",
-      login: "/login"
+      login: "/login",
+      register: "/register"
     }
   }
 };

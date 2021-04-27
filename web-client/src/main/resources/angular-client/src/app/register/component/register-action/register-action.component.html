@@ -1,0 +1,32 @@
+<form class="clr-form" [formGroup]="formGroup" (submit)="onSubmit()">
+    <div class="clr-form-control w-100">
+        <label for="example5" class="clr-control-label">Username</label>
+        <div class="clr-control-container w-100">
+            <div class="clr-input-wrapper w-100">
+                <input type="text" id="example5" formControlName="username" placeholder="Username" class="clr-input w-100" />
+            </div>
+        </div>
+    </div>
+    <div class="clr-form-control w-100">
+        <label for="example8" class="clr-control-label">Password</label>
+        <div class="clr-control-container w-100">
+            <div class="clr-input-wrapper w-100">
+                <input type="password" id="example8" formControlName="password" placeholder="Password" class="clr-input w-100" />
+            </div>
+        </div>
+    </div>
+    <div class="clr-form-control w-100">
+        <label for="example8" class="clr-control-label">Confirm Password</label>
+        <div class="clr-control-container w-100">
+            <div class="clr-input-wrapper w-100">
+                <input type="password" id="example8" formControlName="cpassword" placeholder="Confirm Password" class="clr-input w-100" />
+            </div>
+        </div>
+    </div>
+    <div class="clr-form-control">
+        <div class="clr-justify-content-start">
+            <button type="submit" class="btn btn-primary">REGISTER</button>
+            <button type="button" (click)="onLogin()" class="btn btn-primary">BACK TO LOGIN</button>
+        </div>
+    </div>
+</form>
