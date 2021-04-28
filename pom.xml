@@ -9,10 +9,10 @@
 	<description>Application Builder</description>
 	<packaging>pom</packaging>
 	<modules>
-		<module>message</module>
-		<module>store</module>
 		<module>web-client</module>
-		<module>auth</module>
+		<module>discovery</module>
+		<module>user-service</module>
+		<module>api-gateway</module>
 	</modules>
 
 	<parent>
@@ -24,8 +24,21 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<spring-cloud.version>2020.0.2</spring-cloud.version>
 	</properties>
-	
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<build>
 		<plugins>
 			<plugin>
